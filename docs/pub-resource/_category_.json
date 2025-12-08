@@ -1,0 +1,8 @@
+{
+  "label": "公有云资源",
+  "position": 5,
+  "link": {
+    "type": "generated-index",
+    "description": "公有云资源说明文档."
+  }
+}

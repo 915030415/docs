@@ -1,5 +1,6 @@
 ---
 description: Create a doc page with rich content.
+sidebar_position: 4
 ---
 
 # Hello from Docusaurus
