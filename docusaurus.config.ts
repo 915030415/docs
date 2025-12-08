@@ -87,7 +87,12 @@ const config: Config = {
           position: 'left',
           label: '用户手册',
         },
-        {to: '/blog', label: 'Blog', position: 'left'},
+        {
+          type: 'docSidebar',
+          sidebarId: 'tutorialSidebar',
+          position: 'left',
+          label: '产品介绍',
+        },
       ],
     },
     footer: {
