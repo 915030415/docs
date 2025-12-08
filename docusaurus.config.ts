@@ -87,12 +87,6 @@ const config: Config = {
           position: 'left',
           label: '用户手册',
         },
-        {
-          type: 'docSidebar',
-          sidebarId: 'tutorialSidebar',
-          position: 'left',
-          label: '产品介绍',
-        },
       ],
     },
     footer: {
@@ -121,15 +115,6 @@ const config: Config = {
             {
               label: 'X',
               href: 'https://x.com/docusaurus',
-            },
-          ],
-        },
-        {
-          title: 'More',
-          items: [
-            {
-              label: 'Blog',
-              to: '/blog',
             },
           ],
         },
