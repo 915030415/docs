@@ -43,6 +43,19 @@ sidebar_position: 1
 
 要求：当CMDB需支持ci数据和ci关系数据变化时通过MQ、Http两种方式实时通知。
 
+<table class="wysiwyg-macro" style="background-image: url('http://wiki.imgo.tv/plugins/servlet/confluence/placeholder/macro-heading?definition=e2NvZGV9&locale=zh_CN&version=2'); background-repeat: no-repeat;" data-macro-name="code" data-macro-id="b02f32dd-e57f-4175-9a5a-d057ef9d5efb" data-macro-schema-version="1" data-macro-body-type="PLAIN_TEXT"><tbody><tr><td class="wysiwyg-macro-body"><pre>private void sendEntityNofity(String ciTypeName, EntityNofity nofity){
+        CompletableFuture<Boolean> isOK = nofifyProvider.sendEntityNofity(ciTypeName, nofity);
+        isOK.whenComplete((result, ex) -> {
+            metricProvider.addEntityNotifyMetric(ciTypeName, result);
+        });
+    }
+
+    private void sendRelationNodify(RelationNofity nodify){
+        CompletableFuture<Boolean> isOK = nofifyProvider.sendRelationNofity(nodify);
+        isOK.whenComplete((result, ex) -> {
+            metricProvider.addRelationNotifyMetric(nodify.getRelTypeName(), result);
+        });
+    }</pre></td></tr></tbody></table>
 
   
 
