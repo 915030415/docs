@@ -43,7 +43,7 @@ sidebar_position: 1
 
 要求：当CMDB需支持ci数据和ci关系数据变化时通过MQ、Http两种方式实时通知。
 
-```
+```java
     private void sendRelationNodify(RelationNofity nodify){
         CompletableFuture<Boolean> isOK = nofifyProvider.sendRelationNofity(nodify);
         isOK.whenComplete((result, ex) -> {
