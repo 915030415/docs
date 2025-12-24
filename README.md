@@ -1,5 +1,9 @@
 # Website
 
+[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/915030415/docs)
+
+> 💡 **非开发人员**：您可以快速 [在浏览器中编辑并预览文档](./STACKBLITZ_GUIDE.md)。
+
 This website is built using [Docusaurus](https://docusaurus.io/), a modern static website generator.
 
 ## Installation
